@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <ul>
+    <% messages.forEach((message)=> {%>
+      <li>
+        <h2>
+          <%= message.text %>
+        </h2>
+        <div>
+          <h3>
+            <%= message.user %>
+          </h3>
+          <p>
+            <% const date=message.added %>
+              <%= `${date.getFullYear()}/${date.getMonth()}/${date.getDate()}` %>
+          </p>
+        </div>
+      </li>
+      <% }) %>
+  </ul>
+</body>
+
 </html>
