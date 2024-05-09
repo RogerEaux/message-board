@@ -95,6 +95,10 @@ a {
   justify-content: space-between;
 }
 
+.messages li div h3 {
+  font-size: 1rem;
+}
+
 .messages li div p {
   font-weight: 700;
 }
