@@ -17,6 +17,11 @@ const messages = [
     user: 'Roger',
     added: new Date('2024-05-09'),
   },
+  {
+    text: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis culpa sunt id dignissimos molestias, amet officiis? Veritatis accusamus quae enim ducimus, sequi ea tenetur harum? Dignissimos ea qui deleniti quibusdam!`,
+    user: 'Cicero',
+    added: new Date(0),
+  },
 ];
 
 router.get('/', (req, res, next) => {
