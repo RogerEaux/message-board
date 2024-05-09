@@ -7,22 +7,22 @@
 </head>
 
 <body>
-  <h1>
+  <h1 class="title">
     <%= title %>
   </h1>
 
   <a href="/">Go back</a>
 
-  <form method="POST" action="/new">
+  <form method="POST" action="/new" class="form">
     <label>
-      Message
-      <textarea name="messageText" cols="30" rows="10" required></textarea>
+      <span>Message</span>
+      <textarea name="messageText" rows="5" required></textarea>
     </label>
     <label>
-      By
+      <span>By</span>
       <input type="text" name="messageUser">
     </label>
-    <button type="submit">Post message</button>
+    <button type="submit" class="postMessage">Post message</button>
   </form>
 </body>
 
