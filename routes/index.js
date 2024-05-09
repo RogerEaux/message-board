@@ -27,4 +27,13 @@ router.get('/new', (req, res, next) => {
   res.render('form', { title: 'New Message' });
 });
 
+router.post('/new', (req, res, next) => {
+  messages.push({
+    text: req.body.messageText,
+    user: req.body.messageUser ? req.body.messageUser : 'Anonymous',
+    added: new Date(),
+  });
+  res.redirect('/');
+});
+
 export default router;
