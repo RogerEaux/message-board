@@ -2,6 +2,8 @@
 
 This project is a web app that allows you view and post messages to a message board. It was created to put into practic using the Express framework, templating engines and routing and different requests.
 
+[Checkout the live version here](https://rogereaux-message-board.adaptable.app/).
+
 ## Features
 
 - Pages: The site is structured in different pages: Message Board and New Message.
